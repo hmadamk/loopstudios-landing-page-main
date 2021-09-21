@@ -228,9 +228,23 @@ header ul li a{
 	text-transform:uppercase;
 	text-shadow:0px 0px 10px #000;
 }
-.grid .imgs-bg .overlay{
-	display:inline-block;
-	width:24.5%
+@media (min-width: 771px) {
+  .imgs-bg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 0.5rem;
+  }
+}
+
+.grid .imgs-bg .overlay {
+  /* display: inline-block; */
+  /* width: 24.5%; */
+}
+
+.grid .imgs-bg img {
+  object-fit: cover;
+  height: 100%;
 }
 .grid .imgs-bg span{
 	bottom:10px;
